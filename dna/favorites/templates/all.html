@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content%}
+    <ul>
+        {% for pirate in pirates %}
+            <li>Name: {{pirate.name}}</li>
+            <li>Color: {{pirate.color}}</li>
+            <li>Dog: {{pirate.dog}}</li>
+            <br>
+        {% endfor %}
+    </ul>
+{% endblock %}
